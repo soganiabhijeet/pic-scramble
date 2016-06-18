@@ -1,4 +1,4 @@
-package soganiabhijeet.com.picscramble.adapter;
+package soganiabhijeet.com.picscramble.viewholder;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

@@ -11,8 +11,9 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 
 import soganiabhijeet.com.picscramble.R;
-import soganiabhijeet.com.picscramble.retrofit.Items;
+import soganiabhijeet.com.picscramble.model.Items;
 import soganiabhijeet.com.picscramble.utils.Constants;
+import soganiabhijeet.com.picscramble.viewholder.ImageItem;
 
 /**
  * Created by abhijeetsogani on 6/18/16.

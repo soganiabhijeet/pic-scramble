@@ -1,4 +1,4 @@
-package soganiabhijeet.com.picscramble.retrofit;
+package soganiabhijeet.com.picscramble.model;
 
 /**
  * Created by abhijeetsogani on 6/17/16.

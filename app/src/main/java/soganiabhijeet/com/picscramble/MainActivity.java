@@ -25,9 +25,9 @@ import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 import rx.subscriptions.CompositeSubscription;
 import soganiabhijeet.com.picscramble.adapter.GridAdapter;
-import soganiabhijeet.com.picscramble.retrofit.FlickrModel;
+import soganiabhijeet.com.picscramble.model.FlickrModel;
 import soganiabhijeet.com.picscramble.retrofit.FlickrService;
-import soganiabhijeet.com.picscramble.retrofit.Items;
+import soganiabhijeet.com.picscramble.model.Items;
 import soganiabhijeet.com.picscramble.retrofit.ServiceFactory;
 import soganiabhijeet.com.picscramble.utils.Constants;
 
