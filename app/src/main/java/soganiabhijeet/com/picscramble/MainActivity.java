@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements GridAdapter.OnIte
 
     private void makeNetworkCall() {
         networkCallSubscription = service.getImages()
-                .subscribeOn(Schedulers.newThread())
+                .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<FlickrModel>() {
                     @Override
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements GridAdapter.OnIte
 
     private void createTimer() {
         animationSubscription = Observable.just(1).delay(1, TimeUnit.SECONDS).repeat()
-                .subscribeOn(Schedulers.io())
+                .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<Integer>() {
                     @Override
