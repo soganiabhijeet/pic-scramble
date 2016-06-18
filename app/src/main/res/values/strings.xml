@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Pic Scramble</string>
+    <string name="incorrect_position_text">Incorrect position, Please try again</string>
+    <string name="contrats_text">Congratulations!</string>
+    <string name="completion_text">Congratulations! You have won!!</string>
+    <string name="selection_text">Select the position of below image</string>
+    <string name="flip_text">Remember the positions!. Images will flip in 15 seconds</string>
+    <string name="game_start">Game starts..</string>
+    <string name="time_left">Time left !!!</string>
+    <string name="sec">sec</string>
 </resources>
