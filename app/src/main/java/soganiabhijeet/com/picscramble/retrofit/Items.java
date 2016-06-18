@@ -23,7 +23,7 @@ public class Items {
 
     public Media media;
 
-    private boolean positionIdentified;
+    private boolean isPositionIdentified;
 
     public String getTags() {
         return tags;
@@ -97,12 +97,12 @@ public class Items {
         this.media = media;
     }
 
-    public boolean getPositionIdentified() {
-        return positionIdentified;
+    public boolean getIsPositionIdentified() {
+        return isPositionIdentified;
     }
 
-    public void setPositionIdentified(boolean positionIdentified) {
-        this.positionIdentified = positionIdentified;
+    public void setIsPositionIdentified(boolean positionIdentified) {
+        this.isPositionIdentified = positionIdentified;
     }
 
 

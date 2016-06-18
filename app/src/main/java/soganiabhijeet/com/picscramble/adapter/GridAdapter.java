@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.squareup.picasso.Picasso;
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
@@ -22,7 +22,6 @@ public class GridAdapter extends RecyclerView.Adapter<ImageItem> {
     private LayoutInflater layoutInflater;
     private ArrayList<Items> imageList;
     private final OnItemClickListener listener;
-    boolean isFlip = false;
     private int gridState;
 
     public GridAdapter(Context c, OnItemClickListener listener) {
@@ -50,14 +49,14 @@ public class GridAdapter extends RecyclerView.Adapter<ImageItem> {
         switch (gridState) {
             case Constants.GridStates.TIMER_RUNNING:
             case Constants.GridStates.USER_WON:
-                Picasso.with(mContext).load(imageList.get(position).media.getM()).into(holder.image);
+                Glide.with(mContext).load(imageList.get(position).media.getM()).into(holder.image);
                 holder.image.setOnClickListener(null);
                 break;
             case Constants.GridStates.USER_PLAYING:
-                if (imageList.get(position).getPositionIdentified()) {
-                    Picasso.with(mContext).load(imageList.get(position).media.getM()).into(holder.image);
+                if (imageList.get(position).getIsPositionIdentified()) {
+                    Glide.with(mContext).load(imageList.get(position).media.getM()).into(holder.image);
                 } else {
-                    Picasso.with(mContext).load(R.color.darker_gray).into(holder.image);
+                    Glide.with(mContext).load(R.color.darker_gray).into(holder.image);
                 }
                 holder.image.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -77,7 +76,7 @@ public class GridAdapter extends RecyclerView.Adapter<ImageItem> {
     }
 
     public void itemIdentified(int position) {
-        this.imageList.get(position).setPositionIdentified(true);
+        this.imageList.get(position).setIsPositionIdentified(true);
         notifyItemChanged(position);
     }
 

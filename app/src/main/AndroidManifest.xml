@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="soganiabhijeet.com.picscramble.utils.GlideConfiguration"
+            android:value="GlideModule"/>
     </application>
 
 </manifest>
